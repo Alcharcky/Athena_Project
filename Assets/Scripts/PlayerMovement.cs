@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MoverPersonaje()
     {
-
+        Application.targetFrameRate = 60;
         cuerpitorigido.MovePosition(
             transform.position + cambio * velocidad * Time.deltaTime
             );
